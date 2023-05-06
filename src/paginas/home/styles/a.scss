@@ -1,0 +1,25 @@
+h1 {
+    color: rgba(0, 0, 0, 0.699);
+    color: rgba(1, 46, 1, 0.788);
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav {
+
+    background-color:  #040011;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        width:50rem;
+        background-color:#040011;
+        border: #010001;
+        li {
+            font-size: 15px;
+            color: white;
+        }
+    }     
+}
+
