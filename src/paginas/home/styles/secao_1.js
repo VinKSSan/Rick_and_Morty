@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const S1 = styled.section`
 
     width: 100%;
-    height: 130vh;
+    height: auto;
     background-image: url(${props => props.image});
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,28 +11,29 @@ export const S1 = styled.section`
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    border-bottom: solid 1px  rgba(55, 255, 55, 0.615);
+    border-bottom: solid 2px  rgba(55, 255, 55, 0.615);
+    padding-bottom: 2rem;
     .div2 {
-        padding: 0.5rem;
+        width: 85%;
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.719);
         p {
-                width: 100%;
-                max-width: 109rem;
-                line-height: bold;
-                text-align: center;
-                color: white;
-                font-size: 1.6rem;
-                margin-top: 1rem;
-            }
+            text-indent: 1rem;
+            width: 95%;
+            line-height: bold;
+            text-align: justify;
+            color: azure;
+            font-size: 1.6rem;
+            margin-top: 1rem;
+        }
 
     }
     .div1 {
-        width: 110rem;
-        height: 60rem;
+        width: 85%;
         padding: 0.5rem;
         display: flex;
         justify-content: space-between;
@@ -41,64 +42,79 @@ export const S1 = styled.section`
         background-color: rgba(0, 0, 0, 0.719);
         
         .div_info {
-            width: 100%;
-            height: 90%;
+            width: 70%;
             padding: 0.5rem;
-            max-width: 70rem;
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items:center ;
             h1 {
-                margin-bottom: 8rem;
-                color: white;
-                font-size: 25px;
+                margin-bottom: 4rem;
+                color: aliceblue;
+                font-size: 21pt;
                 text-align: center;
             }
             p {
+                text-indent: 1rem;
                 line-height: bold;
-                text-align: center;
-                color: white;
-                font-size: 1.6rem;
-                margin-top: 1rem;
+                text-align: justify;
+                color:azure;
+                font-size: 12pt;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    @media(max-width:960px) {
+        .div1 {
+            justify-content: center;
+            flex-direction: column;
+        }
+        .div_info {
+            width: 95% !important;
+            h1 {
+                font-size: 21pt;
+            }
+            p {
+                font-size: 12pt;
+                margin-bottom: 1rem;
             }
         }
     }
 `
 
 export const CardImg = styled.div`
-    width: 40%;
-    height: 90%;
+    width: 28%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    position: relative;
-    top: 3.5rem;
     
 
     .div_ima{
         background-color: white;
         width: 100%;
-        height: 90%;
         img {
             
             width: 100%;
-            height: 100%;
+            height: auto;
         }
     }
     .div_info2 {
         background-color: rgba(0, 0, 0, 0.719);
         width: 100%;
-        height: 15%;
         display:flex;
         align-items: center;
-        justify-content: center;
         span {
             text-align: center;
-            font-size: 1.6rem;
+            font-size: 11pt;
             color: rgba(55, 255, 55, 0.615);
         }
+    }
+    @media(max-width:960px) {
+        width: 50%;
+    }
+    @media(max-width:480px) {
+        width: 80%;
     }
 `
 

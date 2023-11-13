@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const S3 = styled.section`
 
     width: 100%;
-    height: 130vh;
+    padding: 1rem 0.2rem;
     background-image: url(${props => props.image});
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,9 +11,10 @@ export const S3 = styled.section`
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    border-bottom: solid 2px  rgba(55, 255, 55, 0.615);
     
     .div1 {
-        width: 110rem;
+        width: 90%;
         padding: 0.5rem;
         display: flex;
         justify-content: space-between;
@@ -38,6 +39,7 @@ export const S3 = styled.section`
                 text-align: center;
                 color: white;
                 font-size: 1.6rem;
+                margin-top: 1.5rem;
             }
         }
     }
@@ -45,21 +47,23 @@ export const S3 = styled.section`
 
 export const ImagePrymary = styled.div`
     width: 100%;
-    height: 100%;
-    max-width: 120rem;
-    max-height: 80rem;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
 
     .div_imag{
-        width: 50%;
-
+        width: 60%;
         img {
             width: 100%;
-            height: 100%;
+            height: auto;
         }
+    }
+    @media(max-width:480px) {
+        .div_imag{
+            width: 80%;
+        }    
     }
 `
 

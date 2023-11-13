@@ -5,7 +5,7 @@ import {yupResolver} from '@hookform/resolvers/yup'
 
 import { Routers } from "./paginas/roters"
 
-import { Nave } from "./menu/menu"
+import { Hed } from "./menu/hed"
 import { Roda } from "./ropé/rodape"
 
 
@@ -13,12 +13,9 @@ export const Yres = {yupResolver}
 
 
 function App() {
-
-  
   return (
-  
       <BrowserRouter>
-        <Nave/>
+        <Hed/>
         <Routers/>
         <Roda/>
       </BrowserRouter>  

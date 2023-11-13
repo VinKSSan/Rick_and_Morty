@@ -54,7 +54,7 @@ export const Foter = styled.footer`
                 }
                 ul {
                     display: flex;
-                    align-items: center;
+                    align-items: left;
                     li {
                         &:not(:first-child) {
                             margin-left: 3rem;
@@ -120,7 +120,92 @@ export const Foter = styled.footer`
      
         }
     }
-    
+    @media(max-width: 900px) {
+        .top-footer {
+            .faça_parte {
+                flex-direction: column;
+            }
+        }
+    }
+    @media(max-width: 725px) {
+        .all{
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            border-bottom: 1px solid  rgba(73, 196, 253, 0.2) ;
+            padding-bottom: 0 ;
+        }
+        .area{
+            padding-left: 1rem;
+            padding-top: 4.8rem;
+            border-left: 1px solid  rgba(73, 196, 253, 0.2);
+            border-bottom: none;
+            margin-bottom: 0 !important; 
+        }
+        .top-footer {
+            border-bottom: none;
+            margin-bottom: 0 !important;
+            .faça_parte {
+                flex-direction: column;
+                align-items: left;
+                ul {
+                    flex-direction: column;
+                    justify-content: left;
+                    li{
+                        margin-left: 0 !important;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 565px) {
+        .area{
+            padding-left: 1rem;
+            padding-top: 2.8rem;
+        }
+        .all{
+            div{
+                ul{
+                    li{
+                        a{
+                            font-size: 10pt !important;
+                        }
+                    }
+                }
+            }    
+        }
+         
+    }
+    @media(max-width: 500px) {
+        padding:4rem 0rem ;
+        .area{
+            width: 50%;
+            padding-left: 1rem;
+            padding-top: 4.8rem;
+            margin-bottom: 1rem;
+        }
+        .top-footer{
+            width: 60%;
+            padding-bottom: 3rem !important;
+        }
+        .all{
+            width: 100%;
+            div{
+                ul{
+                    li{
+                        a{
+                            font-size: 9pt !important;
+                        }
+                    }
+                }
+            }    
+        }
+         
+    }
+    @media(max-width: 410px) {
+        padding:4rem 0rem ;
+    }
 
 
 `

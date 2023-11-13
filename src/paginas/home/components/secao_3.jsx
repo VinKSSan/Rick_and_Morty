@@ -8,9 +8,9 @@ import CaImage from "./../images/rick_robo_sex.jpg"
 
 export function Sec_3() {
     return(
-        <S3 image={Back_ima}>
+        <S3  id="S3" image={Back_ima}>
             <div className="div1">
-                <h1> O Desenvolvimento de Rick and Morty</h1>
+                <h1>A história de Rick and Morty</h1>
                 <ImagePrymary >
                     <div className="div_imag">
                         <img src={CaImage} alt="" />

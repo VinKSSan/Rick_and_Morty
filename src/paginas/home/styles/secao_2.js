@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const S2 = styled.section`
 
     width: 100%;
-    height: 130vh;
     background-image: url(${props => props.image});
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,10 +10,11 @@ export const S2 = styled.section`
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding:2rem 1rem ;
+    border-bottom: solid 2px  rgba(55, 255, 55, 0.615);
     .info1 {
         background-color: rgba(0, 0, 0, 0.719);
         width: 100%;
-        max-width: 110rem;
         margin: 0 50px;
         display: flex;
         justify-content: center;
@@ -23,7 +23,7 @@ export const S2 = styled.section`
         h1 {
             margin-bottom: 2rem;
             color: white;
-            font-size: 25px;
+            font-size: 21pt;
             text-align: start;
         }
         
@@ -35,7 +35,7 @@ export const S2 = styled.section`
 
     }
     .div1 {
-        width: 110rem;
+        width: 90%;
         padding: 0.5rem;
         display: flex;
         justify-content: space-between;
@@ -49,16 +49,16 @@ export const S2 = styled.section`
             justify-content: center;
             flex-direction: column;
             align-items:center ;
-            h1 {
-                margin-bottom: 5rem;
-                color: white;
-                font-size: 25px;
-                text-align: center;
-            }
+            h2{
+            margin: 2rem 0rem;
+            color: white;
+            font-size: 18pt;
+            text-align: start;
+        }
             p {
                 text-align: center;
                 color: white;
-                font-size: 1.6rem;
+                font-size: 13pt;
             }
         }
     }

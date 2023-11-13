@@ -54,6 +54,48 @@ export const   ContentCharacters = styled.div `
         }
 
     }
+    @media(max-width:1000px) {
+        & > div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1.6rem 2rem !important;
+        }
+    }
+    @media(max-width:800px) {
+        & > div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem 1rem !important;
+        }
+    }
+    @media(max-width:700px) {
+        & > div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem 4rem !important;
+        }
+    }
+    @media(max-width:550px) {
+        & > div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2rem 2rem !important;
+        }
+    }
+    @media(max-width:500px) {
+        & > div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0.5rem 0.5rem !important;
+        }
+    }
+    @media(max-width:420px) {
+        & > div {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 1rem !important;
+        }
+    }
     
 `
 

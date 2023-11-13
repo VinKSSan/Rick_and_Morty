@@ -5,13 +5,12 @@ import { Foter } from "./styleFot";
 
 export function Roda() {
     return (
-        <Foter>
-             
-            <div>
-                <a className="logo" alt="">
-                    <h1> Fans de Rick and Morty</h1>
-                </a> 
+        <Foter id="S4">
+            <div className="all">       
                 <div className="top-footer">
+                    <a className="logo" alt="">
+                        <h1> Fans de Rick and Morty</h1>
+                    </a> 
                     <div className="faça_parte">
                         <span>Fique por dentro de tudo sobre Rick and Morty</span>
                         <ul className="item">

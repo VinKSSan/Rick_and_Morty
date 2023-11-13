@@ -7,7 +7,7 @@ import Back_ima from "./../images/rick_and_morty_s4_image.0.webp"
 import Card_ima from "./../images/capa_1temp.webp"
 export function Sec_1() {
     return(
-        <S1 image={Back_ima}>
+        <S1 id="S1" image={Back_ima}>
             <div className="div1">
                  <div className="div_info">
                     <h1>Sobre Rick and Morty</h1>
